@@ -23,32 +23,28 @@
     background: linear-gradient(to left, #8f94fb, #4e54c8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-attachment: fixed;
 }
+// nav styles
 .navbar{
   border:none;
 }
-
+//font styles
 h1,h2, h3{
   font-family: 'Open Sans', sans-serif;
 }
-
+// homepage styles
 .home-callout{
   color: white;
   margin-top: -20px;
   padding-top: 50px;
   padding-bottom: 100px;
 }
-.navbar-default .navbar-brand{
+//Works because of SASS
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav > li > a{
   color: white;
-}
-.navbar-default .navbar-nav > li > a {
-  color: white;
+  &:hover{
+    color: white;
+    opacity: 0.75;
+  }
 }
 
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus{
-  color: white;
-  opacity: 0.75;
-}
-.navbar-default .navbar-brand:hover{
-  color: white;
-  opacity: 0.75;
-}
