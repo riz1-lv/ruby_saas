@@ -29,13 +29,24 @@
 .navbar{
   border:none;
 }
-
+//logo styles
 .navbar-brand{
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
 }
 
-//font styles
+.navbar-default .navbar-toggle .icon-bar{
+  background-color:white;
+}
+
+.navbar-default .navbar-toggle {
+    border: 2px solid white;
+  &:hover, &:focus {
+    background-color: #8f94fb;
+  }
+}
+
+//font styles 
 h1,h2, h3{
   font-family: 'Open Sans', sans-serif;
 }
