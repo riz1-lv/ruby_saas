@@ -29,10 +29,14 @@
         </div>
         <div class="collapse navbar-collapse" id="main-nav-collapse">
           <div class = spacing>
-          <ul class="nav navbar-nav navbar-right">
-              <li><%= link_to "About", about_path%></li>
-              <li><%= link_to "Contact Us", new_contact_path%></li>
-          </ul>
+            <div class="nav navbar-nav navbar-right">
+              <a href = '/users/sign_in' class = 'btn btn-default navbar-btn'>Log in</a>
+              <a href = '/users/sign_up' class = 'btn btn-default navbar-btn'>Sign up</a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li><%= link_to "About", about_path%></li>
+                <li><%= link_to "Contact Us", new_contact_path%></li>
+            </ul>
           </div>
         </div><!-- /.navbar-collapse -->
       </div>
